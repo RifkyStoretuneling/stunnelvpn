@@ -1,15 +1,5 @@
 #!/bin/bash
-MYIP=$(wget -qO- ipinfo.io/ip);
-
-IZIN=$(curl -sS https://raw.githubusercontent.com/RifkyStoretuneling/REGISTER/main/IPVPS | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo "IZIN DI TERIMA!!"
-else
 clear
-figlet "Akses di tolak!! Silakan Hubungi Admin" | lolcat
-exit 0
-fi
-
 #install
 cp /media/cybervpn/var.txt /tmp
 cp /root/cybervpn/var.txt /tmp
@@ -53,7 +43,7 @@ END
 
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[44;97;1m        LUNATIC TUNNELING          \e[0m"
+echo -e "\e[44;97;1m          RIFQY VPN TUNNEL          \e[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
